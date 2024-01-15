@@ -26360,12 +26360,13 @@ a.card-floating-icon:hover {
 }
 
 .tns-carousel-wrapper .tns-nav {
-	position: absolute;
-	top: 100%;
-	width: 100%;
-	padding-top: 1.5rem;
-	text-align: center;
-	white-space: nowrap
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 1;
 }
 
 .tns-carousel-wrapper .tns-nav~.tns-ovh,

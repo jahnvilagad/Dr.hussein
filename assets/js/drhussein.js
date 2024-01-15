@@ -304,7 +304,7 @@ function _typeof(e) {
     }(document.querySelectorAll(".tns-carousel-wrapper .tns-carousel-inner"), function(e, t) {
         var r = {
             container: t,
-            controlsText: ['<i class="ai-arrow-left"></i>', '<i class="ai-arrow-right"></i>'],
+            controlsText: ['<i class="bi bi-arrow-left"></i>', '<i class="bi bi-arrow-right"></i>'],
             navPosition: "top",
             controlsPosition: "top",
             mouseDrag: !0,
