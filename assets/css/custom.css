@@ -1,0 +1,165 @@
+.page-loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .4s .2s ease-in-out;
+    transition: all .4s .2s ease-in-out;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+}
+
+.page-loading.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.page-loading-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    opacity: 0;
+}
+
+.page-loading.active>.page-loading-inner {
+    opacity: 1;
+}
+
+.page-loading-inner>span {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #737491;
+}
+
+.page-spinner {
+    display: inline-block;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-bottom: .75rem;
+    vertical-align: text-bottom;
+    border: .15em solid #1153A1;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner .75s linear infinite;
+    animation: spinner .75s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.blue-box {
+    background-color: #1153A1;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 7.5rem;
+    top: -26px;
+    z-index: -1;
+}
+
+.light-blue-box {
+    background-color: #217DEA;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: -33px;
+    bottom: -33px;
+    z-index: -1;
+}
+
+.border-radius-20{
+    border-radius: 20px;
+}
+
+.bg-primary-linear{
+    background-image: linear-gradient(180deg, #E7F0F8 0%, #F5FAFE00 100%);
+    background-color: transparent;
+}
+
+.elementor-shape-top {
+    top: -1px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+}
+
+.elementor-shape-fill {
+    fill: #fff;
+    transform-origin: center;
+    transform: rotateY(0deg);
+}
+
+.bg-primary-linear svg {
+    height: 60px;
+    display: block;
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-bg{
+    background-color: #D8E6F3;
+    border-radius: 10px;
+}
+
+.service-bg:hover{
+    opacity: 0.05;
+    background-color: #217DEA;
+}
+
+.service-img {
+    position: absolute;
+    bottom: 7px;
+    right: 1px;
+}
+
+.service-bg::before{
+    content: '';
+    background-image: url(../img/feature/invisalign.jpg);
+    background-size: cover;
+    background-position: 100% center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.service-bg:hover:before{
+    opacity: 1;
+}
