@@ -98,13 +98,12 @@
     z-index: -1;
 }
 
-.border-radius-20{
+.border-radius-20 {
     border-radius: 20px;
 }
 
-.bg-primary-linear{
-    background-image: linear-gradient(180deg, #E7F0F8 0%, #F5FAFE00 100%);
-    background-color: transparent;
+.bg-primary-linear {
+    background-color: #E7F0F8;
 }
 
 .elementor-shape-top {
@@ -131,12 +130,12 @@
     transform: translateX(-50%);
 }
 
-.service-bg{
+.service-bg {
     background-color: #D8E6F3;
     border-radius: 10px;
 }
 
-.service-bg:hover{
+.service-bg:hover {
     opacity: 0.05;
     background-color: #217DEA;
 }
@@ -147,7 +146,7 @@
     right: 1px;
 }
 
-.service-bg::before{
+.service-bg::before {
     content: '';
     background-image: url(../img/feature/invisalign.jpg);
     background-size: cover;
@@ -160,6 +159,18 @@
     transition: 0.3s;
 }
 
-.service-bg:hover:before{
+.service-bg:hover:before {
     opacity: 1;
+}
+
+.border-radius-top-right {
+    border-radius: 120px 120px 0 0;
+}
+
+.footer .border-end {
+    border-right: 1px solid #1153A133 !important;
+}
+
+.footer .border-bottom {
+    border-bottom: 1px solid #1153A133 !important;
 }
