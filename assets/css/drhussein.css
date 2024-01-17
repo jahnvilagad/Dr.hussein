@@ -8485,12 +8485,12 @@ sup {
 }
 
 a {
-	color: #766df4;
+	color: #217dea;
 	text-decoration: none
 }
 
 a:hover {
-	color: #493ef0;
+	color: #217dea;
 	text-decoration: underline
 }
 
@@ -17143,7 +17143,7 @@ fieldset:disabled .btn {
 
 .bg-secondary {
 	--bs-bg-opacity: 1;
-	background-color: #f7f7fc !important
+	background-color: #217DEA !important
 }
 
 .bg-success {
@@ -26600,14 +26600,14 @@ a.card-floating-icon:hover {
 	margin-bottom: 0 !important
 }
 
-.gallery-item {
+/* .gallery-item {
 	display: block;
 	position: relative;
 	text-decoration: none !important;
 	overflow: hidden;
 	-webkit-mask-image: -webkit-radial-gradient(white, black);
 	mask-image: -webkit-radial-gradient(white, black)
-}
+} */
 
 .gallery-item>img {
 	display: block;
@@ -26639,11 +26639,11 @@ a.card-floating-icon:hover {
 	margin-left: -1.4375rem;
 	transform: scale(0.3);
 	color: #fff;
-	font-family: "around-icons";
+	font-family: "bootstrap-icons";
 	font-size: 2rem;
 	text-align: center;
 	line-height: 2.875rem;
-	content: "";
+	content: "\F4FA";
 	z-index: 5
 }
 
@@ -27142,7 +27142,7 @@ a.card-floating-icon:hover {
 	z-index: 0
 }
 
-.banner .banner-img {
+.banner .breadcrumb-bg {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -27260,7 +27260,7 @@ _:-ms-lang(x),
 .offcanvas-header,
 .offcanvas-footer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: end;
 	align-items: center;
 	flex-shrink: 0;
 	padding: 1.25rem 1.5rem
@@ -27367,7 +27367,8 @@ _:-ms-lang(x),
 	}
 	.offcanvas-collapse .offcanvas-body .navbar-nav .show>.nav-link,
 	.offcanvas-collapse .offcanvas-body .navbar-nav .active>.nav-link {
-		color: #766df4
+		color: #1153A1;
+		font-weight: bold;
 	}
 	.offcanvas-collapse .offcanvas-body .navbar-nav .dropdown-menu .dropdown-item {
 		color: #5a5b75
